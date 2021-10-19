@@ -1,0 +1,28 @@
+﻿@model AlunoModel;
+
+@*
+*@
+@{
+}
+
+
+@using (Html.BeginForm())
+{
+
+    <h4>Cadastro de Alunos</h4>
+    <hr />
+
+
+    @Html.ValidationSummary("", new {@class = "text-danger"})
+
+    @Html.EditorForModel()
+
+    <br />
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Cadastrar" class="btn btn-success" />
+        </div>
+    </div>
+
+
+}
